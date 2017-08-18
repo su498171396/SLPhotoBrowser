@@ -13,6 +13,8 @@
 		3EE82D0F1F467707006F3FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE82D0D1F467707006F3FA7 /* Main.storyboard */; };
 		3EE82D111F467707006F3FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE82D101F467707006F3FA7 /* Assets.xcassets */; };
 		3EE82D141F467707006F3FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE82D121F467707006F3FA7 /* LaunchScreen.storyboard */; };
+		3EE82D1E1F4677D4006F3FA7 /* SLBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE82D1D1F4677D4006F3FA7 /* SLBrowserImageView.m */; };
+		3EE82D211F467872006F3FA7 /* SLBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE82D201F467872006F3FA7 /* SLBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		3EE82D101F467707006F3FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EE82D131F467707006F3FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EE82D151F467707006F3FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE82D1C1F4677D4006F3FA7 /* SLBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLBrowserImageView.h; path = SLPhotoBrowser/SLBrowserImageView.h; sourceTree = "<group>"; };
+		3EE82D1D1F4677D4006F3FA7 /* SLBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLBrowserImageView.m; path = SLPhotoBrowser/SLBrowserImageView.m; sourceTree = "<group>"; };
+		3EE82D1F1F467872006F3FA7 /* SLBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLBrowser.h; path = SLPhotoBrowser/SLBrowser.h; sourceTree = "<group>"; };
+		3EE82D201F467872006F3FA7 /* SLBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLBrowser.m; path = SLPhotoBrowser/SLBrowser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		3EE82D031F467707006F3FA7 /* SLPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				3EE82D1B1F467736006F3FA7 /* SLPhotoBrowser */,
 				3EE82D071F467707006F3FA7 /* AppDelegate.h */,
 				3EE82D081F467707006F3FA7 /* AppDelegate.m */,
 				3EE82D0A1F467707006F3FA7 /* ViewController.h */,
@@ -77,6 +84,17 @@
 				3EE82D051F467707006F3FA7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EE82D1B1F467736006F3FA7 /* SLPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				3EE82D1F1F467872006F3FA7 /* SLBrowser.h */,
+				3EE82D201F467872006F3FA7 /* SLBrowser.m */,
+				3EE82D1C1F4677D4006F3FA7 /* SLBrowserImageView.h */,
+				3EE82D1D1F4677D4006F3FA7 /* SLBrowserImageView.m */,
+			);
+			name = SLPhotoBrowser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +128,7 @@
 				TargetAttributes = {
 					3EE82D001F467707006F3FA7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T863F2KTD9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE82D211F467872006F3FA7 /* SLBrowser.m in Sources */,
+				3EE82D1E1F4677D4006F3FA7 /* SLBrowserImageView.m in Sources */,
 				3EE82D0C1F467707006F3FA7 /* ViewController.m in Sources */,
 				3EE82D091F467707006F3FA7 /* AppDelegate.m in Sources */,
 				3EE82D061F467707006F3FA7 /* main.m in Sources */,
@@ -272,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T863F2KTD9;
 				INFOPLIST_FILE = SLPhotoBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sulei.SLPhotoBrowser;
@@ -283,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T863F2KTD9;
 				INFOPLIST_FILE = SLPhotoBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sulei.SLPhotoBrowser;
